@@ -1,0 +1,93 @@
+body {
+  background-color:#abb0b5 ;
+  margin: 15px 15px 15px 15px;
+}
+
+a  {
+  background-color: lightcyan;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+div.lista ul li {
+  display:block;
+}
+
+a:hover {
+  background-color: blue ;
+  background: aqua ;
+  transition: all 1s;
+}
+
+#header {
+  text-align:center;
+  background-color: black;
+  color: white ;
+  line-height: 50px;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding-top:14px;
+}
+
+ul li {
+  display: inline;
+}
+
+nav {
+  width:100%;
+}
+iframe{
+  margin-top:10px;
+  width:100%;
+}
+
+img {
+  margin-top:10px;
+  height: 240px;
+  border:10px solid #565353;
+  border-radius:5px;
+}
+
+.is-invalid {
+  border:solid 1px red;
+}
+.is-valid{
+  border:solid 1px #57de75;
+}
+
+
+.myButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.myButton:hover {
+  background-color: #555;
+}
+
+.error {
+
+  color: red;
+  display: block;
+}
+
+.good {
+
+  color: #21ff54;
+  display: block;
+}
+
+.col-3{
+  background:url("assets/gym.jpg");
+}
