@@ -1,0 +1,90 @@
+
+<div class="navbar">
+
+</div>
+
+<div class=" col-md-9">
+<form>
+    <fieldset>
+        <legend>Uzupełnij dane:</legend>
+
+        <div class="form-group">
+            <label for="name">Imię:</label>
+            <input id="name" name="name"  type="text"  placeholder="Podaj imię:" required /> 
+			<div id="aname"  type="text" class="error"></div>
+			<div id="bname"  type="text" class="good"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="surname">Nazwisko:</label>
+            <input id="surname" name="surname" type="text" placeholder="Podaj nazwisko:" required />
+			<div id="asurname"  type="text" class="error"></div>
+			<div id="bsurname"  type="text" class="good"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" name="email" placeholder="Podaj email:" required />
+			<div id="aemail"  type="text" class="error"></div>
+			<div id="bemail"  type="text" class="good"></div>
+        </div>
+		
+		
+            <br>
+            <label>Płeć:</label>
+            <br>
+
+            <div class="form-group">
+            <input type="radio"
+                   name="sex"
+                   id="man"
+                   value="man"
+                   checked required />
+            <label for="man">Mężczyzna</label>
+
+            <input type="radio"
+                   name="sex"
+                   id="woman"
+                   value="women" required />
+            <label for="woman">Kobieta</label>
+                </div>
+
+            <div class="form-group">
+                <label for="text">Opis:</label>
+                <textarea class="form-control" id="text" name="text" rows="3" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="age">Wiek:</label>
+                <input id="age" type="number" name="email" placeholder="Podaj wiek:" required />
+				<div id="aage" type="text" class="error"></div>
+			    <div id="bage" type="text" class="good"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="status">Stan cywilny:</label>
+                <select class="form-control" id="status">
+                    <option>Panna</option>
+                    <option>Kawaler</option>
+                    <option>Mężatka</option>
+                    <option>Żonaty</option>
+                </select>
+            </div>
+
+            <button type="submit" class="sumbit">Wyślij</button>
+            <button type="reset" class="reset">Wyczyść</button>
+
+
+        </fieldset>
+        
+</form>
+    
+</div>
+<br>
+
+<button class="myButton" title="Wróć do góry">Do Góry</button>
+
+<script type="text/javascript" src="js/skrypt.js"></script>
+<script type="text/javascript" src="js/przycisk.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
+

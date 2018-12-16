@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -9,32 +10,36 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { KontaktComponent } from './components/kontakt/kontakt.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { QuizComponent } from './components/quiz/quiz.component';
-import {RouterTestingModule} from "@angular/router/testing";
+import { BlogComponent } from './components/blog/blog.component';
+
 
 const appRoutes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component:HomeComponent,
   },
 
   {
     path: 'kontakt',
-    component: KontaktComponent,
+    component:KontaktComponent,
+  },
 
   {
     path: 'mapa',
-    component: MapaComponent,
+    component:MapaComponent,
   },
 
   {
     path: 'quiz',
-    component: QuizComponent,
+    component:QuizComponent,
   },
 
-
-  }];
-
-
+  {
+    path: 'blog', 
+    component:BlogComponent
+  },
+];
+  
 
 
 
@@ -46,15 +51,16 @@ const appRoutes: Routes = [
     KontaktComponent,
     MapaComponent,
     QuizComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-
-
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 
 })
 export class AppModule { }
