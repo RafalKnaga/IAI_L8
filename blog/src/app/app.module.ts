@@ -11,6 +11,13 @@ import { KontaktComponent } from './components/kontakt/kontakt.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogItemComponent } from './components/blog-item/blog-item.component';
+import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
+import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
+import { BlogItemDetailComponent } from './components/blog-item-detail/blog-item-detail.component';
+
+
+
 
 
 const appRoutes: Routes = [
@@ -35,11 +42,16 @@ const appRoutes: Routes = [
   },
 
   {
-    path: 'blog', 
+    path: 'blog',
     component:BlogComponent
   },
+  {
+    path: 'blog/detail/:id',
+    component: BlogItemDetailComponent
+  },
+
 ];
-  
+
 
 
 
@@ -51,7 +63,15 @@ const appRoutes: Routes = [
     KontaktComponent,
     MapaComponent,
     QuizComponent,
-    BlogComponent
+    BlogComponent,
+    BlogItemComponent,
+    BlogItemTextComponent,
+    BlogItemImageComponent,
+    BlogItemDetailComponent
+
+
+
+
   ],
   imports: [
     BrowserModule,
