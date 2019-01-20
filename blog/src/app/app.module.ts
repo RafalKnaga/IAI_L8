@@ -15,6 +15,10 @@ import { BlogItemComponent } from './components/blog-item/blog-item.component';
 import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
 import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
 import { BlogItemDetailComponent } from './components/blog-item-detail/blog-item-detail.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { BlogHomeComponent } from './components/blog-home/blog-home.component';
+import { TextFormatDirective } from './directives/text-format.directive';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
@@ -43,11 +47,11 @@ const appRoutes: Routes = [
 
   {
     path: 'blog',
-    component:BlogComponent
+    component:BlogHomeComponent,
   },
   {
     path: 'blog/detail/:id',
-    component: BlogItemDetailComponent
+    component: BlogItemDetailComponent,
   },
 
 ];
@@ -67,7 +71,11 @@ const appRoutes: Routes = [
     BlogItemComponent,
     BlogItemTextComponent,
     BlogItemImageComponent,
-    BlogItemDetailComponent
+    BlogItemDetailComponent,
+    SearchBarComponent,
+    BlogHomeComponent,
+    TextFormatDirective,
+    FilterPipe
 
 
 
