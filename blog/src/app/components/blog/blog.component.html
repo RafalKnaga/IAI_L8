@@ -1,5 +1,3 @@
-<input [(ngModel)]="filterText" placeholder="Wpisz nazwę..." 
-id="search" type="search" class="form-control">
 <div *ngFor="let item of items | filter:filterText">
  <app-blog-item [image]="item.image" [text]="item.text">
  </app-blog-item>
